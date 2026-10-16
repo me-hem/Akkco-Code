@@ -1,0 +1,35 @@
+{
+    "name": "akkco-code",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "private": true,
+    "workspaces": [
+        "apps/*",
+        "packages/*"
+    ],
+    "scripts": {
+        "dev": "tsx --env-file=apps/cli/.env apps/cli/src/index.ts",
+        "format": "prettier --write .",
+        "format:check": "prettier --check .",
+        "typecheck": "tsc --noEmit",
+        "test": "tsx --test \"packages/*/test/**/*.test.ts\" \"apps/*/test/*.test.ts\"",
+        "test:tui": "tsx --test \"apps/cli/test/pty/**/*.test.ts\"",
+        "verify": "npm run format:check && npm run typecheck && npm test && npm run test:tui",
+        "prepare": "husky"
+    },
+    "lint-staged": {
+        "*.{js,ts,tsx,json,md}": "prettier --write"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^26.5.1",
+        "husky": "^9.1.7",
+        "lint-staged": "^17.6.0",
+        "prettier": "^3.9.9",
+        "tsx": "^4.23.15",
+        "typescript": "^7.0.2"
+    }
+}

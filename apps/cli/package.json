@@ -1,0 +1,23 @@
+{
+    "name": "@akkco/cli",
+    "version": "0.0.1",
+    "private": true,
+    "type": "module",
+    "dependencies": {
+        "@akkco/core": "0.0.1",
+        "@akkco/models": "0.0.1",
+        "@akkco/providers": "0.0.1",
+        "@akkco/retrieval": "0.0.1",
+        "@akkco/tools": "0.0.1",
+        "ink": "^5.2.1",
+        "react": "^18.3.1",
+        "string-width": "^7.2.0",
+        "wrap-ansi": "^9.0.2"
+    },
+    "devDependencies": {
+        "@types/react": "^18.3.31",
+        "@xterm/headless": "^6.0.0",
+        "node-pty": "^1.1.0",
+        "zod": "^3.24.2"
+    }
+}
