@@ -1,10 +1,15 @@
 # Akkco Code
 
-A modular, terminal-based agentic AI coding assistant for pair programming, repository inspection, and automated tool execution.
+A modular, terminal-based agentic AI coding assistant for pair programming, repository inspection, and automated tool execution. Akkco Code is a complete harness rather than a thin client: it owns the agent loop, tool execution, context budgeting, conversation memory, and terminal presentation, while models stay behind a provider-neutral contract. The same runtime drives a small local Ollama model or a hosted cloud endpoint without changes to the domain packages.
 
 Built for the **Hacktoberfest Hack Day** hackathon (MLH), with model inference served through **DigitalOcean Serverless Inference** (OpenAI-compatible, `openai-gpt-oss-20b`).
 
-Akkco Code is a complete harness rather than a thin client: it owns the agent loop, tool execution, context budgeting, conversation memory, and terminal presentation, while models stay behind a provider-neutral contract. The same runtime drives a small local Ollama model or a hosted cloud endpoint without changes to the domain packages.
+### Team Name: Tech Titans
+- Akshaj rawat
+- Alok Rana (TL)
+- Kanakpal Singh
+- Umesh Bhatt
+
 
 For detailed system design, contracts, protocol recovery, and architectural specifications, see [ARCHITECTURE.md](./ARCHITECTURE.md).
 
